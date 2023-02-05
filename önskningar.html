@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+<head>
+  
+  <meta charset="UTF-8">b
+  <meta name="viewport" content="width=devcie width, initial scale=1">
+  <meta name="description" content="im just having fun page">
+  <title> hey there</title>
+  <link rel="stylesheet" href="Mystyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+
+  <script language="JavaScript">
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("email","req","Please provide your email");
+    frmvalidator.addValidation("email","email",
+      "Please enter a valid email address");
+    </script>
+
+</head>
+<body>
+  <nav> 
+    <ul>
+      <li> <a style="text-decoration:none" href="index.html">Startsida</a></li>
+      <li> <a style="text-decoration:none" href="index.html#jul">Jul</a></li>
+      <li> <a style="text-decoration:none" href="index.html#julkonst">Julkonst</a></li>
+      <li> <a style="text-decoration:none" href="index.html#julhistoria">Julhistoria</a></li>
+      <li> <a style="text-decoration:none" href="önskningar.html">Önskningar</a></li>
+      <li> <a style="text-decoration:none" href="Julrecept.html">Julrecept</a></li>
+      <li> <a style="text-decoration:none" href="Julmusik.html">Julmusik</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="navbreak"></div>
+  <div class="formbox">
+  <form action="contact-form-handler.php" method="post" name="contact_form">
+    <div><p class="middle" >Vad önskar du dig i år?</p></div>
+    <div>
+      <label for="name" > namn:</label>
+      <input type="text" name="name" id="name" placeholder="Anders Andersson" required>
+    </div>
+
+    <div>
+      <label for="mailen"> mail:</label>
+    <input type="email" name="mailen" id="mailen" placeholder="Anders.tomten@rudolf.alv" required>
+    </div>
+    
+   <div>
+   <p> har du varit snäll i år?</p>
+    Stygg
+    <label for="stygg" > </label>
+    <input type="radio" id="stygg" name="stygg-snäll" >
+   </div>
+    <div>
+      Snäll
+    <label for="snäll" > </label>
+    <input type="radio" id="snäll" name="stygg-snäll" >
+    </div>
+
+    <div>
+      kommer du vara snäll nästa år?
+    <label for="kommer"></label>
+    <input type="checkbox" name="kommer" id="kommer" required>
+    </div>
+    
+    <div>
+      Skriv din önskning här: <textarea>
+
+      </textarea rows="11" cols="40">
+      <input id="butt"type="submit" value="skicka" class="sub" required> 
+    </div>
+    
+  </form>
+</div>
+</body>
+<section>
+  <address>
+    Tomteslingan 1<br>
+    000 99 Svartlien<br>
+    TomtensRödaKalingar@Rudolf.Alv <br>
+    tel: 0735968677 <br>
+
+
+  </address>
+  <p></p>
+</section>
+
+    
+
+    

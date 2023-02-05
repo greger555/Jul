@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+
+
+body{
+    background-image: linear-gradient(rgba(59, 59, 59, 0.527),rgba(51, 50, 50, 0.5)), url('Berry_Christmas_Wood_planks_Branches_Template_574113_3840x2160.jpg');
+    
+}
+nav{
+    height: 90px;
+    width: 99.5%;
+    background-color:rgb(39, 71, 5);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border: 4px solid rgb(248, 227, 227);
+    border-radius: 4px 4px 2px 2px;
+     
+    /* this is the anvigation bar and its style, how it is positioned for exemple " its is fixed to the top and left and it is fixed so it always follows
+    around on the page" */
+    
+    
+}
+nav ul{
+    color:rgb(248, 227, 227);
+    margin:auto;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 900;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* styling of the list text in the navigation bar */
+
+}
+nav li a:hover{
+    background-color: rgb(248, 227, 227) ;
+    color:rgb(39, 71, 5);
+    border-radius: 4px;
+    
+    /* styling of the list text when hovered with the mouse */
+
+}
+nav li{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Rochester', Arial, Helvetica, sans-serif;
+    
+
+/* some more styling /placement of the lists inside the unordered list (ul) */
+    
+}
+li a{ 
+    color:rgb(248, 227, 227);
+    
+}
+.navbreak{
+    height: 60px;
+    
+    /* this function (invisible box) makes sure the navigation bar doesnt block the h1 elements in the text when linked to them
+    it is as big as the navigation bar (doesnt need to be but it looks cleanest that way) */
+}
+
+header{
+    margin-bottom: 30px;
+    
+    
+}
+
+.snow{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 300px;
+   background: url(Snowflakes.png);
+   animation: snowflakes 13s linear infinite;
+   
+}
+@keyframes snowflakes {
+    0% {
+        background-position: 100% 100%;
+    }
+    50%{ background-position: 50% 50%;
+    }
+    
+    90% {
+        background-position: 0 0;
+    }
+    100%{ background-position: 100% 100%}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+header h1{
+    text-align: center;
+    color:rgb(248, 227, 227);
+    font-size: 100px;
+    font-family: 'Rochester', Arial, Helvetica, sans-serif ;
+    
+}
+
+
+header i{
+    font-size: 175px;
+}
+#textarea{
+    margin-bottom: 40px;
+}
+    
+   
+
+
+div h1{
+    font-family: 'Rochester' , Arial, Helvetica, sans-serif;
+    color:crimson;
+    text-shadow: 4px 2px 3px rgba(60, 14, 14, 0.595);
+    font-size: 60px;
+}
+div h2{
+    font-family: 'Rochester' , Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    color:rgb(220, 220, 220);
+    font-family: inherit;
+    font-size: 23px;
+    width: 70%;
+}
+
+section{
+    border-bottom: 1px solid rgba(220, 220, 220, 0.4)
+}
+
+#gran{
+    float: right;
+    border-radius: 3px;
+}
+#man{
+    width: 128px;
+    height: 128px;
+    float: left;
+    border-radius: 3px;
+}
+
+
+
+
+address{
+    font-size: large;
+    text-align: center;
+    color:rgb(248, 227, 227);
+    margin-top: -15px;
+
+
+}
+#kontakt{
+    color:rgb(248, 227, 227);
+
+}
+.formbox{
+    width:600px;
+    height: 700px;
+    margin: 0 auto;
+    /* formborder around the form for easyer positioning of the elements inside the form, padding, margin etc. */
+}
+
+ /* !!!!!! here starts styling of önskningar page!!!!! */
+
+form{
+   text-align: left;
+   padding: 60px;
+   /* the actual form */
+}
+
+
+form div{
+    margin: 20px;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: rgb(220, 220, 220) ;
+}
+textarea{
+    height: 150px; 
+    width: 400px;
+    border: 3px solid rgb(45, 81, 6);
+    border-radius: 4px;
+}
+
+#mailen, #name{
+    width: 400px;
+    border: 3px solid rgb(45, 81, 6);
+    border-radius: 4px;
+}
+#butt{
+ background-color: rgb(39, 71, 5);
+ color: rgb(248, 227, 227);
+ border-radius: 4px;
+ width: 150px;
+ margin-left: 130px;
+ transition: transform 0.6s;
+
+ /* styling of the button */
+}
+#butt:hover{
+    transform: scale(1.2);
+    border: 2px solid rgb(220, 220, 220) ;
+    cursor: pointer;
+}
+form .middle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* !!!!!! here starts styling of julrecept page!!!!! */
+
+#smallh1{
+    font-size: 80px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.recept{
+    min-width: 500px;
+    display: grid;
+    padding: 0 10px 40px 30px;
+    margin-bottom: 20px;
+    grid-template-columns: 2.1fr 1fr 1fr;
+}
+
+
+.ingridienser h2{
+    text-align: left;
+    margin-left: 15px;
+    
+}
+
+.recept-image{
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 300px
+   
+}
+.ingridienser{
+    padding: 0px 3px 0px 3px;
+    
+    overflow: scroll;
+    
+}
+.story{
+    border-right: 1px solid rgba(220, 220, 220, 0.4);
+    border-bottom: 1px solid rgba(249, 220, 220, 0.35) ;
+    padding-right: 27px;
+    
+    overflow: scroll;
+    
+}
+.story, .ingridienser{
+    max-height: 570px;
+    font-size: 17px;
+}
+.SnedBild{
+    max-width: 99%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: 0 10px 0 10px;
+    opacity: 0.5;
+}
+.SnedBild:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
